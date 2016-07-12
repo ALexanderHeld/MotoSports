@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MotoSports.Fahrer">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAgAAAQAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Fahrer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Liga">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>Liga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Motorrad">
+    <Position X="8.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Motorrad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Punktetabelle">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Punktetabelle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Rennen">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MotoSports.Rennen.Renntyp" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Rennen.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Rennen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Strecke">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAASgAAABAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strecke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Team">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAABAAAQAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

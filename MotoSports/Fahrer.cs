@@ -12,5 +12,8 @@ namespace MotoSports
         private string Name { get; set; }
         private int Alter { get; set; }
         private float Gewicht { get; set; }
+        private bool KannTeilnehmen { get; set; }
+
+
     }
 }

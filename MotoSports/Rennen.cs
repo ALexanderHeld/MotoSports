@@ -16,5 +16,6 @@ namespace MotoSports
         private Strecke AustragungsOrt { get; set; }
 
         // Teilnehmer
+        private List<Fahrer> TeilnehmerTeams { get; set; }
     }
 }

@@ -10,6 +10,6 @@ namespace MotoSports
     class Liga
     {
         private List<Strecke> ZugelasseneStrecken { get; set; }
-
+        private List<Team> TeilnehmendeTeams { get; set; }
     }
 }

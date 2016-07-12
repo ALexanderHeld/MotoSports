@@ -12,5 +12,7 @@ namespace MotoSports
         private List<Fahrer> TeamFahrer { get; set; }
         private List<Motorrad> TeamMotorraeder { get; set; }
 
+
+        private Dictionary<Fahrer, Motorrad> FahrerMotorradZugehoerigkeit { get; set; }
     }
 }
