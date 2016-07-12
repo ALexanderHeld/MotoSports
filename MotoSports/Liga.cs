@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MotoSports
 {
+    // Liga = Moto3 oder Moto2 oder MotoGP
     class Liga
     {
+        private List<Strecke> ZugelasseneStrecken { get; set; }
+
     }
 }

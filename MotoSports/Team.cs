@@ -8,6 +8,9 @@ namespace MotoSports
 {
     class Team
     {
-        // Teamnamen, Größe, etc - Und welche Teams in welchen Ligen vorhanden seien können / sind
+        private string TeamName { get; set; }
+        private List<Fahrer> TeamFahrer { get; set; }
+        private List<Motorrad> TeamMotorraeder { get; set; }
+
     }
 }

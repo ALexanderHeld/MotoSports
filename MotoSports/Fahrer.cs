@@ -11,24 +11,6 @@ namespace MotoSports
         // Alter, Name etc
         private string Name { get; set; }
         private int Alter { get; set; }
-        private int Gewicht { get; set; }
-
-        public void SetName(string name)
-        {
-            if (!String.IsNullOrEmpty(name))
-                Name = name;
-            else
-                // Fehlerbearbeitung
-                throw new NotImplementedException();
-        }
-
-        public string GetName()
-        {
-            if (!String.IsNullOrEmpty(Name))
-                return Name;
-            else
-                throw new NotImplementedException();
-                return null;
-        }
+        private float Gewicht { get; set; }
     }
 }

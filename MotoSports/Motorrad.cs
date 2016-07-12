@@ -8,6 +8,7 @@ namespace MotoSports
 {
     class Motorrad
     {
-        // Grundlegende Eigenschaften über alle Motorräder
+        private string TypenBezeichnung { get; set; }
+        private string Marke { get; set; }
     }
 }
