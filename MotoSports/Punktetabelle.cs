@@ -22,6 +22,8 @@ namespace MotoSports
         private Dictionary<Team, int> Teamwertung { get; set; }
 
         // Funktionen um die Punkte zu manipulieren
+            // Hinzufügen von Punkten
+            // Strafpunkte
 
         // Funktionen um die Punkte anzeigen zu lassen
     }

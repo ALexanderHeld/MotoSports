@@ -17,5 +17,9 @@ namespace MotoSports
 
         // Teilnehmer
         private List<Fahrer> TeilnehmerTeams { get; set; }
+
+        // Reihenfolge der Fahrer im Rennen
+        private SortedDictionary<int, Fahrer> Platzierung { get; set; }
+        
     }
 }

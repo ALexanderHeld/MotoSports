@@ -10,5 +10,8 @@ namespace MotoSports
     {
         private string TypenBezeichnung { get; set; }
         private string Marke { get; set; }
+        private int TopSpeed { get; set; }
+
+        private List<Reifen> ZugelasseneReifen { get; set; }
     }
 }

@@ -14,6 +14,7 @@ namespace MotoSports
         private float Gewicht { get; set; }
         private bool KannTeilnehmen { get; set; }
 
-
+        // Wertung
+        private int SaisonPunkte { get; set; }
     }
 }

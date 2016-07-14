@@ -49,6 +49,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Punktetabelle.cs" />
+    <Compile Include="Reifen.cs" />
     <Compile Include="Rennen.cs" />
     <Compile Include="Strecke.cs" />
     <Compile Include="Team.cs" />
