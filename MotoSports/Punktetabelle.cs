@@ -8,23 +8,31 @@ namespace MotoSports
 {
     class Punktetabelle
     {
-        // Threadsicheres Singleton, da es nur eine Punktetabelle geben soll / darf
-        private Punktetabelle PunkteSingleton = null;
         public Punktetabelle()
         {
-            if (PunkteSingleton == null)
-                PunkteSingleton = new Punktetabelle();
+            Reihenfolge = new SortedList<int, Fahrer>();
+        }
+        public SortedList<int, Fahrer> Reihenfolge { get; set; }
+        
+
+        // Methoden
+        public void InitFahrer(params Fahrer[] args) 
+        {
+            foreach (Fahrer f in args)
+            {
+                Reihenfolge.Add(0, f);
+            }
         }
 
-        // Tatsaechliche Punktetabelle
+        public void PunkteVergeben(params Fahrer[] args)
+        {
+            foreach (Fahrer f in args)
+            {
+                int temp = Reihenfolge.Keys[Reihenfolge.IndexOfValue(f)];
+                Reihenfolge.Remove()
 
-        private Dictionary<Fahrer, int> Fahrerwertung { get; set; }
-        private Dictionary<Team, int> Teamwertung { get; set; }
-
-        // Funktionen um die Punkte zu manipulieren
-            // Hinzufügen von Punkten
-            // Strafpunkte
-
-        // Funktionen um die Punkte anzeigen zu lassen
+            }
+        }
+       
     }
 }

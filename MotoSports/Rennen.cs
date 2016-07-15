@@ -9,17 +9,19 @@ namespace MotoSports
     class Rennen
     {
         // Enum
-        private enum Renntyp { Qualifying, Rennen}
+        // private enum Renntyp { Qualifying, Rennen}
 
         // Properties
-        private Renntyp ArtDesRennens { get; set; }
+        // private Renntyp ArtDesRennens { get; set; }
         private Strecke AustragungsOrt { get; set; }
-
-        // Teilnehmer
-        private List<Fahrer> TeilnehmerTeams { get; set; }
 
         // Reihenfolge der Fahrer im Rennen
         private SortedDictionary<int, Fahrer> Platzierung { get; set; }
-        
+
+        // Rennen
+        public void StarteRennen()
+        {
+            
+        }
     }
 }

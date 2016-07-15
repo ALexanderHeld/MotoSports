@@ -8,10 +8,11 @@ namespace MotoSports
 {
     class Motorrad
     {
-        private string TypenBezeichnung { get; set; }
-        private string Marke { get; set; }
-        private int TopSpeed { get; set; }
+        public Motorrad(string marke)
+        {
+            Marke = marke;
+        }
 
-        private List<Reifen> ZugelasseneReifen { get; set; }
+        public string Marke { get; set; }
     }
 }

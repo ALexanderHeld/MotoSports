@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MotoSports.Fahrer">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Fahrer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MotorradDesFahrers" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MotoSports.Motorrad">
+    <Position X="9.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Motorrad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Program">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBACAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Punktetabelle">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Punktetabelle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Rennen">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rennen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AustragungsOrt" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MotoSports.Strecke">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Strecke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MotoSports.Team">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TeamFahrer" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MotoSports.Liga">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MotoSports.Liga.League" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Liga.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACACAAAAAgAA=</HashCode>
+      <FileName>Liga.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TeilnehmendeTeams" />
+      <Property Name="ZugelasseneStrecken" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

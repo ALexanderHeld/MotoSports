@@ -8,13 +8,22 @@ namespace MotoSports
 {
     class Fahrer
     {
+        public Fahrer(string vorname, string nachname, Motorrad moped)
+        {
+            Vorname = vorname;
+            Nachname = nachname;
+            MotorradDesFahrers = moped;
+            SaisonPunkte = 0;
+        }
+
         // Alter, Name etc
-        private string Name { get; set; }
-        private int Alter { get; set; }
-        private float Gewicht { get; set; }
-        private bool KannTeilnehmen { get; set; }
+        public string Vorname { get; set; }
+        public string Nachname { get; set; }
+
+        // Motorrad
+        public Motorrad MotorradDesFahrers { get; set; }
 
         // Wertung
-        private int SaisonPunkte { get; set; }
+        public int SaisonPunkte { get; set; }
     }
 }
