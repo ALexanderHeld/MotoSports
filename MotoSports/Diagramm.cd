@@ -18,41 +18,44 @@
     </TypeIdentifier>
   </Class>
   <Class Name="MotoSports.Program">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="9" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBACAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MotoSports.Punktetabelle">
-    <Position X="6.5" Y="6.5" Width="1.5" />
+    <Position X="7" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAgAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAABAAAAAAAA=</HashCode>
       <FileName>Punktetabelle.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MotoSports.Rennen">
-    <Position X="3.25" Y="6.5" Width="1.5" />
+    <Position X="4" Y="6.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAACAAAASIAAAAAAAAAAAAAA=</HashCode>
       <FileName>Rennen.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="AustragungsOrt" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="RanglisteNachBeendigung" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="MotoSports.Strecke">
     <Position X="0.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Strecke.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MotoSports.Team">
-    <Position X="3.75" Y="2.75" Width="1.5" />
+    <Position X="4" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Team.cs</FileName>
@@ -62,7 +65,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="MotoSports.Liga">
-    <Position X="0.5" Y="2.75" Width="1.5" />
+    <Position X="0.5" Y="2.75" Width="2.25" />
     <NestedTypes>
       <Enum Name="MotoSports.Liga.League" Collapsed="true">
         <TypeIdentifier>
@@ -71,12 +74,14 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAACACAAAAAgAA=</HashCode>
+      <HashCode>AAAEAAAAAEAQAAAAAAAhAAAAAAAAAAAACACAAAQAAIA=</HashCode>
       <FileName>Liga.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Property Name="TeilnehmendeTeams" />
       <Property Name="ZugelasseneStrecken" />
+      <Property Name="TeilnehmendeTeams" />
+      <Property Name="TeilnehmendeFahrer" />
+      <Property Name="AnstehendeRennen" />
     </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -42,6 +42,7 @@ namespace MotoSports
                 Console.WriteLine($"{f.Vorname} {f.Nachname} hat diese Saison {f.SaisonPunkte} verdient.");
             }
         }
+
         // Collection Class
         /*private class KvpCollection
         {
