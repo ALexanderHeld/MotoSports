@@ -69,16 +69,12 @@ namespace MotoSports
                 Console.Clear();
                 Console.WriteLine("Alle Rennen sind abgeschlossen! Gib \"show\" ein um die Endauswertung zu sehen.");
                 Renntag -= 1;
-                
             }
 
             else
             {
-
                 AnstehendeRennen[Renntag].GeneriereRennergebnis(TeilnehmendeFahrer);
             }
-
-            
         }
     }
 }

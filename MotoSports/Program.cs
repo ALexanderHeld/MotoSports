@@ -36,7 +36,7 @@ namespace MotoSports
             Close();
         }
 
-        public static Tuple<Liga, Punktetabelle> Init()
+        static Tuple<Liga, Punktetabelle> Init()
         {
             // Instanzieren
             Liga MotoGP = new Liga();

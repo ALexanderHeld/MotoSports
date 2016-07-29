@@ -18,6 +18,7 @@ namespace MotoSports
         public Strecke AustragungsOrt { get; set; }
         public DateTime Datum { get; set; }
         public List<Fahrer> RanglisteNachBeendigung { get; set; }
+
         public List<Fahrer> GeneriereRennergebnis(List<Fahrer> input)
         {
             Random rnd = new Random();
@@ -29,15 +30,16 @@ namespace MotoSports
             Console.WriteLine($"Wir sind in {AustragungsOrt.Land} auf der {AustragungsOrt.Streckenname} - Strecke.\nDas Wetter ist gut " +
             "und das Rennen geht gleich los!");
 
-            AnimateProgressBar();
+            animateProgressBar();
             return result.ToList();
         }
 
-        private void AnimateProgressBar()
+        private void animateProgressBar() // fehler
         {
             int top = Console.CursorTop;
             int left = Console.CursorLeft;
             int Milisekunden = 0;
+
             Console.WriteLine(".................... 0%");
             System.Threading.Thread.Sleep(Milisekunden);
             Console.SetCursorPosition(left, top);

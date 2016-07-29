@@ -10,13 +10,13 @@ namespace MotoSports
     {
         public Team(string name)
         {
-            TeamName = name;
-            SaisonPunkte = 0;
+            teamName = name;
+            saisonPunkte = 0;
             TeamFahrer = new List<Fahrer>();
         }
 
-        private string TeamName { get; set; }
-        private int SaisonPunkte { get; set; }
+        private string teamName { get; set; } // Fehler
+        private int saisonPunkte { get; set; } // Fehler
 
         public List<Fahrer> TeamFahrer { get; set; }
 
