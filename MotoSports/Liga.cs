@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace MotoSports
 {
@@ -16,7 +17,8 @@ namespace MotoSports
             TeilnehmendeFahrer = new List<Fahrer>();
         }
 
-        public int Renntag = -1; // Chris ansprechen wie schöner lösen
+        private int renntag = -1; // Chris ansprechen wie schöner lösen
+        public int Renntag { get { return renntag; } set { renntag = value; } }
         public enum League { MotoGP, Moto2, Moto3}
         public League LigaTyp { get; set; }
         
@@ -70,11 +72,39 @@ namespace MotoSports
                 Console.WriteLine("Alle Rennen sind abgeschlossen! Gib \"show\" ein um die Endauswertung zu sehen.");
                 Renntag -= 1;
             }
-
             else
             {
                 AnstehendeRennen[Renntag].GeneriereRennergebnis(TeilnehmendeFahrer);
             }
+        }
+
+        public void SpeicherDatenAb()
+        {
+            string myData = "";
+            foreach (Fahrer f in TeilnehmendeFahrer)
+            {
+                AddFahrerZuString(ref myData, f);
+            }
+
+            Console.WriteLine(myData);
+            File.WriteAllText("test.txt", myData);
+        }
+
+        private void AddFahrerZuString(ref string s, Fahrer f)
+        {
+            s += $"{f.Vorname};{f.Nachname};{f.SaisonPunkte};{f.MotorradDesFahrers.Marke}" + Environment.NewLine;
+        }
+
+        public void LeseDatenEin()
+        {
+            string myData = File.ReadAllText("test.txt");
+        }
+        
+        private void ParseDaten(string s)
+        {
+            s.Split(';');
+
+            FahrerHinzufuegen(s.Split(';')[0], s.Split(';')[1], s.Split(';')[2]);
         }
     }
 }

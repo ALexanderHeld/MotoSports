@@ -33,26 +33,23 @@ namespace MotoSports
             Console.Clear();
             //List<Fahrer> temp = input.OrderBy(item => item.SaisonPunkte).ToList();
             //temp.Reverse();
-
-            List<Fahrer> temp = bubbleSortieren(input);
-            foreach(Fahrer f in temp)
+            bubbleSortierenToo(ref input);
+            foreach(Fahrer f in input)
             {
                 Console.WriteLine($"{(input.IndexOf(f)+1).ToString("D2")}| {f.Vorname} {f.Nachname}   \t|\t{f.SaisonPunkte}");
             }
         }
 
-        private List<Fahrer> bubbleSortieren(List<Fahrer> input)
+        private void bubbleSortierenToo(ref List<Fahrer> input)
         {
             int TempJ;
             int TempJPlus1;
-            
-
             // Vorsicht durch doppelte Vernestung der For-Schleife ergibt sich O = n*n
             for (int i = 0; i < input.Count; i++)
             {
                 for (int j = 0; j < input.Count - 1; j++)
                 {
-                    if (input[j].SaisonPunkte > input[j + 1].SaisonPunkte)
+                    if (input[j].SaisonPunkte < input[j + 1].SaisonPunkte) // > Aufsteigend | < Absteigend
                     {
                         TempJ = input[j].SaisonPunkte;
                         TempJPlus1 = input[j + 1].SaisonPunkte;
@@ -64,8 +61,6 @@ namespace MotoSports
                     }
                 }
             }
-            input.Reverse();
-            return input;
         }
     }
 }
